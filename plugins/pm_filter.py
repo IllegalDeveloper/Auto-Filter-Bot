@@ -35,7 +35,7 @@ async def aks_downloader(bot, query):
         reply_markup=InlineKeyboardMarkup(btn)
     )
 
-@Client.on_message(filters.group & filters.text & filters.incoming)
+@Client.on_message(filters.group | filters.private & filters.text & filters.incoming)
 async def give_filter(client, message):
     settings = await get_settings(message.chat.id)
     if settings["auto_filter"]:
