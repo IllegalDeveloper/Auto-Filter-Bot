@@ -48,7 +48,7 @@ if len(LOG_CHANNEL) == 0:
 else:
     LOG_CHANNEL = int(LOG_CHANNEL)
     
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1001557985379')
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1002008705346')
 if len(SUPPORT_GROUP) == 0:
     print('Error - SUPPORT_GROUP is missing, exiting now')
     exit()
@@ -68,7 +68,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/IllegalDeveloperBot')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/illegal_supports')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/Illegal_Developer')
 
 # Bot settings
