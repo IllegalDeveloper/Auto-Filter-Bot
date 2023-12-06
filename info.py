@@ -89,10 +89,10 @@ LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 # Other
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
-SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915443501")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "upshrink.com")
+SHORTLINK_API = environ.get("SHORTLINK_API", "63c07aa03d3489c3e4448ff8ef8b36fe85b5f801")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
-IS_VERIFY = is_enabled(environ.get("IS_VERIFY", "False"), False)
+IS_VERIFY = is_enabled(environ.get("IS_VERIFY", "True"), True)
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/SL_Bots_Updates")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/SL_Bots_Updates")
