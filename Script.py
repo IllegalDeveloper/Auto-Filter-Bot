@@ -9,6 +9,13 @@ class script(object):
 ★ Language: Python
 ★ Library: Pyrogram</b>"""
 
+    SUPPORT_TXT = """<b>⍟ Cʜᴀɴɴᴇʟs & Gʀᴏᴜᴘs Mᴏᴅᴜʟᴇ ⍟
+
+🎬 Cᴏᴍᴘʟᴇᴛᴇ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛɪɴɢ Gʀᴏᴜᴘ.
+🚦 Aʟʟ Lᴀɴɢᴜᴀɢᴇs Mᴏᴠɪᴇs & Sᴇʀɪᴇs.
+🗣️ Bᴏᴛ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ.
+📢 Bᴏᴛ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ.</b>"""
+
     MY_OWNER_TXT = """<b>★ Name: Illegal Developer
 ★ Username: @IllegalDeveloperBot
 ★ ID: <code>5493832202</code>
