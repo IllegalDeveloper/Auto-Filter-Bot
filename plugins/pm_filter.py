@@ -469,7 +469,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', callback_data='my_owner')
                 ],[
                     InlineKeyboardButton('🍁 ғᴇᴀᴛᴜʀᴇs', callback_data='help'),
-                    InlineKeyboardButton('📚 Aʙᴏᴜᴛ', callback_data='my_about')
+                    InlineKeyboardButton('📚 Aʙᴏᴜᴛ', callback_data='your_about')
                 ],[
                     InlineKeyboardButton('♻️ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=UPDATES_LINK)
                   ]]
@@ -497,6 +497,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        elif query.data == "your_about":
+        buttons = [[
+            InlineKeyboardButton('📊 sᴛᴀᴛᴜs', callback_data='stats'),
+            InlineKeyboardButton('🔋 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='source')
+        ],[
+            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.YOUR_ABOUT_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )    
     elif query.data == "stats":
         if query.from_user.id not in ADMINS:
             return await query.answer("ADMINS Only!", show_alert=True)
