@@ -518,10 +518,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url=f'https://t.me/illegal_supports'),
             InlineKeyboadButton('ᴜᴘᴅᴀᴛᴇ', url=f'https://t.me/KSeriesFilm')
-        ],[
-            InlineKeyboardButton('≼ ʙᴀᴄᴋ', callback_data='start')
         ]]
-          
+        buttons.append(
+            [InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')]
+        )
+            
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.MY_OWNER_TXT,
