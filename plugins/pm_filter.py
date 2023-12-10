@@ -511,14 +511,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "my_owner":
         buttons = [[
-            InlineKeyboardButton('ɪʟʟᴇɢᴀʟ ʙᴏᴛ ʟᴏɢꜱ', url=f'https://t.me/Illegal_Disscussion')
-        ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url=f'https://t.me/+4RB2-U2o9yE4ZmQ9'),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/KSeriesFilm')
-        ],[
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url=f'https://t.me/illegal_supports'),
-            InlineKeyboadButton('ᴜᴘᴅᴀᴛᴇ', url=f'https://t.me/KSeriesFilm')
-        ]]
+            InlineKeyboardButton(text=f"☎️ ᴄᴏɴᴛᴀᴄᴛ - {(await client.get_users(admin)).first_name}", user_id=admin)
+        ]
+            for admin in ADMINS
+        ]
         buttons.append(
             [InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')]
         )
