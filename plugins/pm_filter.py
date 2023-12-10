@@ -469,7 +469,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', callback_data='my_owner')
                 ],[
                     InlineKeyboardButton('🍁 ғᴇᴀᴛᴜʀᴇs', callback_data='help'),
-                    InlineKeyboardButton('📚 Aʙᴏᴜᴛ', callback_data='your_about')
+                    InlineKeyboardButton('🚫 ᴅᴍᴄᴀ', url='https://telegra.ph/Contant-RemovalDMCA-07-30')
                 ],[
                     InlineKeyboardButton('♻️ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=UPDATES_LINK)
                   ]]
