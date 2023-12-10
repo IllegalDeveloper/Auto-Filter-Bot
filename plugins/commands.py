@@ -98,7 +98,7 @@ async def start(client, message):
             reply_markup = InlineKeyboardMarkup(btn)
         m = await message.reply(f"Now You are successfully verified For Today ✓\n\nNow You have Unlimited Access For All Movies Till : {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
         await asyncio.sleep(120)
-            await m.delete()
+        await m.delete()
         return
     
     verify_status = await get_verify_status(message.from_user.id)
@@ -113,10 +113,10 @@ async def start(client, message):
         ]]
        n = await message.reply("Thanks To Use Me 🤝\n\n📌 ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪꜰʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ꜰɪʟᴇ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴛᴏᴅᴀʏ\n\n#Verification ✓", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
         await asyncio.sleep(120)
-            await n.delete()
+        await n.delete()
         return
- 
-    if mc.startswith('all'):
+  
+        if mc.startswith('all'):
         _, grp_id, key = mc.split("_", 2)
         files = temp.FILES.get(key)
         if not files:
