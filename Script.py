@@ -9,6 +9,11 @@ class script(object):
 ★ Language: Python
 ★ Library: Pyrogram</b>"""
 
+    YOUR_ABOUT_TXT = """<b>★ Server: Private 
+★ Database: MongoDB
+★ Language: Python
+★ Library: Pyrogram</b>"""
+
     SUPPORT_TXT = """<b>⍟ Cʜᴀɴɴᴇʟs & Gʀᴏᴜᴘs Mᴏᴅᴜʟᴇ ⍟
 🎬 Cᴏᴍᴘʟᴇᴛᴇ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛɪɴɢ Gʀᴏᴜᴘ.
 🚦 Aʟʟ Lᴀɴɢᴜᴀɢᴇs Mᴏᴠɪᴇs & Sᴇʀɪᴇs.
