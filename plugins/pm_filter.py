@@ -481,13 +481,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "my_about":
         buttons = [[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', callback_data='stats')
+            InlineKeyboardButton('ɪʟʟᴇɢᴀʟ ʀᴇQᴜᴇꜱᴛ ʟᴏɢꜱ', url=f'https://t.me/Illegal_Request')
         ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', callback_data='stats'),
-            InlineKeyboardButton('Channel', callback_data='source')
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url=f'https://t.me/+4RB2-U2o9yE4ZmQ9'),
+            InlineKeyboardButton('Channel', url=f'https://t.me/KSeriesFilm')
         ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', callback_data='stats'),
-            InlineKeyboardButton('Channel', callback_data='source')
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url=f'https://t.me/Illegal_Supports'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url=f'https://t.me/Illegal_Developer')
         ],[
             InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')
         ]]
