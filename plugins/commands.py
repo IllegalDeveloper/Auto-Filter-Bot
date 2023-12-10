@@ -51,7 +51,7 @@ async def start(client, message):
                     InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', callback_data='my_owner')
                 ],[
                     InlineKeyboardButton('🍁 ғᴇᴀᴛᴜʀᴇs', callback_data='help'),
-                    InlineKeyboardButton('📚 Aʙᴏᴜᴛ', callback_data='my_about')
+                    InlineKeyboardButton('📚 Aʙᴏᴜᴛ', callback_data='your_about')
                 ],[
                     InlineKeyboardButton('♻️ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=UPDATES_LINK)
                   ]]
