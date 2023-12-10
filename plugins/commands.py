@@ -111,7 +111,7 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
         ]]
-       n = await message.reply("Thanks To Use Me 🤝\n\n📌 ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪꜰʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ꜰɪʟᴇ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴛᴏᴅᴀʏ\n\n#Verification ✓", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+        n = await message.reply(f"Thanks To Use Me 🤝\n\n📌 ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪꜰʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ꜰɪʟᴇ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴛᴏᴅᴀʏ\n\n#Verification ✓", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
         await asyncio.sleep(120)
         await n.delete()
         return
