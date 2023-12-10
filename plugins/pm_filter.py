@@ -572,6 +572,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('User Command', callback_data='user_command'),
             InlineKeyboardButton('Admin Command', callback_data='admin_command')
         ],[
+            InlineKeyboardButton('Earn Money With Bot', callback_data='earn')
+        ],[
             InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
