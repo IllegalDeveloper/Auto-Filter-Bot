@@ -45,16 +45,19 @@ async def start(client, message):
     
     if (len(message.command) != 2) or (len(message.command) == 2 and message.command[1] == 'start'):
         buttons = [[
-            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('🌿 ꜱᴜᴘᴘᴏʀᴛ', callback_data="my_about"),
-                    InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', callback_data='my_owner')
-                ],[
-                    InlineKeyboardButton('🍁 ғᴇᴀᴛᴜʀᴇs', callback_data='help'),
-                    InlineKeyboardButton('📚 Aʙᴏᴜᴛ', callback_data='your_about')
-                ],[
-                    InlineKeyboardButton('♻️ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=UPDATES_LINK)
-                  ]]
+            InlineKeyboardButton("+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+        ],[
+            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ɪɴʟɪɴᴇ 🔍', switch_inline_query_current_chat='')
+        ],[
+            InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡️', url=UPDATES_LINK),
+            InlineKeyboardButton('💡 Support Group 💡', url=SUPPORT_LINK)
+        ],[
+            InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='my_about'),
+            InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', callback_data='my_owner')
+        ],[
+            InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ 💰', callback_data='earn')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -96,7 +99,7 @@ async def start(client, message):
                 InlineKeyboardButton("📌 Get File 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
-        await message.reply(f"Now You are successfully verified For Today ✓\n\nNow You have Unlimited Access For All Movies Till: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
+        await message.reply(f"✅ You successfully verified until: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
         return
     
     verify_status = await get_verify_status(message.from_user.id)
@@ -109,10 +112,10 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
         ]]
-        await message.reply(f"Thanks To Use Me 🤝\n\n📌 ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪꜰʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ꜰɪʟᴇ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴛᴏᴅᴀʏ\n\n#Verification ✓", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+        await message.reply("You not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
         return
-  
-        if mc.startswith('all'):
+ 
+    if mc.startswith('all'):
         _, grp_id, key = mc.split("_", 2)
         files = temp.FILES.get(key)
         if not files:
