@@ -96,7 +96,7 @@ async def start(client, message):
                 InlineKeyboardButton("📌 Get File 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
-        await message.reply(f"✅ You successfully verified until: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
+        await message.reply(f"Now You are successfully verified For Today ✓\n\nNow You have Unlimited Access For All Movies Till : {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
         return
     
     verify_status = await get_verify_status(message.from_user.id)
@@ -109,7 +109,7 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
         ]]
-        await message.reply("You not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+        await message.reply("Thanks To Use Me 🤝\n\n📌 ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪꜰʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ꜰɪʟᴇ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴛᴏᴅᴀʏ\n\n#Verification ✓", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
         return
  
     if mc.startswith('all'):
